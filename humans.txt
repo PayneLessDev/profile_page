@@ -4,6 +4,7 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    Adam Payne -- Lead -- @PayneLessDev
 
 # THANKS
 

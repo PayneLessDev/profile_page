@@ -1,14 +1,5 @@
-/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
-   Base styles: opinionated defaults
+    Base styles: opinionated defaults
    ========================================================================== */
 
 html {
@@ -354,6 +345,25 @@ body::-webkit-scrollbar {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-4{
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  text-align: center;
+
+}
+.grid-4 > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.grid-4 > a:hover{
+  color: grey;
+  transform: rotate(45deg);
+  transition: color 0.4s ease,
+}
+
 .center{
   text-align: center;
   margin: auto;
@@ -372,6 +382,11 @@ body::-webkit-scrollbar {
 footer {
   padding: 2.2rem;
 }
+
+header{
+  padding: 2.2rem;
+}
+
 footer p {
   margin: 0;
 }
@@ -542,6 +557,7 @@ footer p {
   color: white;
   font-size: 1.5rem;
   padding: 1rem;
+  
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
