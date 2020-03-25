@@ -306,6 +306,13 @@ textarea {
 } */
 
 /* Start of Me*/
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
   background: rgba(0, 0, 0, 0.9 );
   margin: 0;
@@ -571,4 +578,170 @@ footer p {
   text-decoration: none;
   transition: color 0.4s ease;
 
+}
+
+.accordion-container {
+  margin: 10px auto;
+  width: 100%;
+}
+
+.accordion{
+  /* background: #222; */
+  width: 100%;
+  min-width: 880px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 200px;
+  font-size: 0;
+}
+
+.accordion-tab{
+  display: inline-block;
+  background-color: #444;
+  border-right: #333 solid 1px;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+.accordion-tab:hover{
+  width: 450px;
+}
+
+.accordion-tab:hover .social a:before{
+  margin-left: -100px;
+
+}
+
+.accordion-tab:hover .social a:after{
+  margin-left: -5px;
+  
+}
+
+
+.accordion-tab .accordion-content{
+  background: #f4f4f4;
+  width: 360px;
+  height: 200px;
+  margin-left: 80px;
+  position: relative;
+  padding: 50px 0 0 15px;
+}
+
+.accordion-content > h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.accordion-content > h1 .linkedin {
+  color: #2867B2;
+}
+
+.accordion-content > p {
+  color: #333;
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding-right: 30px;
+}
+
+.social a:before,
+.social a:after{
+  transition: all 0.4s ease-in-out 0.1s;
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px "Font Awesome 5 Brands";
+  color: #fff;
+}
+
+.social a:after{
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+
+.linkedin a:before,
+.linkedin a:after{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f08c";
+  
+}
+
+.linkedin a:after{
+  background-color: #2867B2;
+}
+
+.twitter a:before,
+.twitter a:after{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f081";
+  
+}
+
+.twitter a:after{
+  background-color: #1da1f2;
+}
+
+.facebook a:before,
+.facebook a:after{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f082";
+  
+}
+
+.facebook a:after{
+  background-color: #4267b2;
+}
+
+.instagram a:before,
+.instagram a:after{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d";
+  
+}
+
+.instagram a:after{
+  background-color: #c13584;
+}
+
+.github a:before,
+.github a:after{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
+  
+}
+
+.github a:after{
+  background-color: #6e5494;
+}
+
+.youtube a:before,
+.youtube a:after{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f167";
+  
+}
+
+.youtube a:after{
+  background-color: #FF0000;
+}
+
+.mediumblog a:before,
+.mediumblog a:after{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f3c7";
+  
+}
+
+.mediumblog a:after{
+  background-color: #00ab6c;
 }
