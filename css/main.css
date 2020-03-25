@@ -581,19 +581,22 @@ footer p {
 }
 
 .accordion-container {
-  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-areas: 'left center right';
   width: 100%;
 }
 
 .accordion{
-  /* background: #222; */
-  width: 100%;
+  background: 0;
+  width: 90%;
   min-width: 880px;
   display: block;
   list-style-type: none;
   overflow: hidden;
   height: 200px;
   font-size: 0;
+  grid-area: center;
 }
 
 .accordion-tab{
