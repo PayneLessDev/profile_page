@@ -435,15 +435,9 @@ footer {
   padding: 2.2rem;
 }
 
-header{
-  padding: 2.2rem;
-}
-
 footer p {
   margin: 0;
 }
-
-
 
 .menu-wrap{
   position: fixed;
@@ -545,7 +539,7 @@ footer p {
 }
 
 .menu-wrap .menu > div {
-  background: rgba(51,51,51,0.75);
+  background: rgba(51,51,51,0.95);
   border-radius: 50%;
   width: 200vw;
   height: 200vw;
@@ -567,10 +561,9 @@ footer p {
 
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  color: white;
+  color: #f4f4f4;
   font-size: 1.5rem;
   padding: 1rem;
-  
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
