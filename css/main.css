@@ -43,7 +43,7 @@
 body {
   background: var(--dark0, --background);
   margin: 0;
-  color: #f4f4f4;
+  color: #var(--light);
   font-family: 'Roboto Mono', sans-serif;
 }
 
@@ -54,6 +54,10 @@ body::-webkit-scrollbar {
 
 footer {
   padding: .5rem;
+}
+
+ul{
+  list-style: none;
 }
 
 /********* Theme **********/
@@ -71,6 +75,49 @@ footer {
 
 /********* Accordion **********/
 
+/********** Contact Form **********/
+.contact-body{
+  color: var(--light);
+  line-height: 1.6;
+  padding: 1em;
+}
+
+.contact-container{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.brand{
+  text-align: center;
+}
+
+.contact-wrapper{
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
+}
+
+.contact-wrapper > *{
+  padding: 1em;
+}
+
+.contact-info{
+  background-color: var(--light);
+  color: var(--dark0);
+}
+
+.contact-info h3, .contact-info ul{
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact-contact{
+  background-color: var(--dark1);
+}
+
+.contact-contact form{
+  
+}
 /********* Animation Frames **********/
 @keyframes glow {
   from{
@@ -172,11 +219,13 @@ footer {
 .content .title {
   font-size: 2.2rem;
   margin-top: 1rem;
+  color: var(--light)
 }
 
 .content .text {
   line-height: 1.7;
   margin-top: 1rem;
+  color: var(--light);
 }
 
 .container{
@@ -325,7 +374,6 @@ footer {
 }
 
 .menu-wrap .menu > div > div > ul > li {
-  list-style: none;
   color: var(--light);
   font-size: 1.5rem;
   padding: 1rem;
@@ -345,11 +393,10 @@ footer {
 }
 
 .accordion{
-  background: var(--dark0);
+  background: var(--light);
   width: 100%;
   min-width: 880px;
   display: block;
-  list-style-type: none;
   overflow: hidden;
   height: 200px;
   font-size: 0;
@@ -507,9 +554,9 @@ footer {
 }
 
 .me{
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 30%;
   transition: all 0.5s;
 }
 
@@ -527,7 +574,4 @@ footer {
 .footer-logo{
   padding: 2.5px;
   height: 25px;
-}
-h3{  
-  /* color: #1cb3c8; */
 }

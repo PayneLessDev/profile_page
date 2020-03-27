@@ -1,36 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
   <meta charset="utf-8">
-  <title>Adam Payne</title>
-  <meta name="description" content="">
+  <title>Adam Payne | Blog</title>
+  <meta name="robots" content="index,follow" />
+  <meta name='keywords' content='Full' >
+  <meta name="description" content="Adam Payne, Fullstack Web Developer From Sydney Australia. Ruby on Rails & MERN.">
+  <meta name='author' content='Adam Payne'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/aa84a73484.js" crossorigin="anonymous"></script>
-  <!-- Place favicon.ico in the root directory -->
 
+  <!-- Style Sheets -->
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/main.css">
-
   <meta name="theme-color" content="#fafafa">
 </head>
-<body>
-  <div class="form-container">
-    <h1 class="brand">PayneLess Dev</h1>
-    <div class="form-wrapper">
-      <div class="company-info">
-        <h3>Paynless Dev</h3>
+
+<body class="contact-body">
+
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Hamburger Menu -->
+  <nav class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div>
+      </div>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="/index.html" target="_self" rel="noopener noreferrer">Home</a></li>
+            <li><a href="/blog.html" target="_self" rel="noopener noreferrer">Blog</a></li>
+            <li><a href="/projects.html" target="_self" rel="noopener noreferrer">Projects</a></li>
+            <li><a href="/html/resume.html" target="_self" rel="noopener noreferrer">Resume</a></li>
+            <li><a href="/contact.html" target="_self" rel="noopener noreferrer">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Form -->
+  <div class="contact-container">
+    <h1 class="brand">PaynelessDev</h1>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>PayneLessDev</h3>
         <ul>
-          <li>44 something street</li>
-          <li>(555) 555 555</li>
-          <li>test@test.org</li>
+          <li>P.O Box 666 Blacktown</li>
+          <li>+61 406 864 170</li>
+          <li>contact@adam-payne.info</li>
         </ul>
       </div>
-      <div class="contact">
-        <h3>Email us</h3>
+      <div class="contact-contact">
+        <h3>Email Me</h3>
         <form action="">
           <p>
             <label for="">Name</label>
@@ -38,19 +71,19 @@
           </p>
           <p>
             <label for="">Company</label>
-            <input type="text" name="Company">
+            <input type="text" name="company">
           </p>
           <p>
-            <label for="">Email</label>
+            <label for="">Email Address</label>
             <input type="email" name="email">
           </p>
           <p>
-            <label for="">Phone number</label>
+            <label for="">Phone Number</label>
             <input type="text" name="phone">
           </p>
           <p>
             <label for="">Message</label>
-            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <textarea name="message" rows="5"></textarea>
           </p>
           <p>
             <button>Submit</button>
@@ -59,5 +92,21 @@
       </div>
     </div>
   </div>
+
+
+  <!-- End of Content                           -->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
+
 </html>
