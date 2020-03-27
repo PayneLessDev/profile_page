@@ -43,7 +43,7 @@
 body {
   background: var(--dark0, --background);
   margin: 0;
-  color: #f4f4f4;
+  color: #var(--light);
   font-family: 'Roboto Mono', sans-serif;
 }
 
@@ -345,7 +345,7 @@ footer {
 }
 
 .accordion{
-  background: var(--dark0);
+  background: var(--light);
   width: 100%;
   min-width: 880px;
   display: block;
@@ -507,9 +507,9 @@ footer {
 }
 
 .me{
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 30%;
   transition: all 0.5s;
 }
 
@@ -527,7 +527,4 @@ footer {
 .footer-logo{
   padding: 2.5px;
   height: 25px;
-}
-h3{  
-  /* color: #1cb3c8; */
 }
