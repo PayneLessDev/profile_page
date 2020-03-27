@@ -1,3 +1,14 @@
+/******************************
+[Table of Contents]
+1. Variables
+2. Generic Selectors
+3. Theme
+4. Showcase
+5. Accordion
+6. Animation Frames
+7. Queries
+ ******************************/
+
 /********* Variables **********/
 :root{
   /* Colors */
@@ -10,11 +21,15 @@
   --medium: #00ab6c;
 
   /* Theme */
-  --dark0: #3c415e;
-  --dark1: #738598;
+  --background: red;
+  --background-alt: ;
+  --text: ;
+  --text-highlight: ;
 
-  --light: #dfe2e2;
-
+  /* Monochrome */
+  --dark0: #333;
+  --dark1: #444;
+  --light: #f4f4f4;
   }
 
 /********** Generic Selectors **********/
@@ -26,7 +41,7 @@
 }
 
 body {
-  background: rgba(0, 0, 0, 0.9 );
+  background: var(--dark0, --background);
   margin: 0;
   color: #f4f4f4;
   font-family: 'Roboto Mono', sans-serif;
@@ -514,5 +529,5 @@ footer {
   height: 25px;
 }
 h3{  
-  color: #1cb3c8;
+  /* color: #1cb3c8; */
 }
