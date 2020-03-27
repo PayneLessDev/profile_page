@@ -216,8 +216,8 @@ textarea {
   .grid-4{
     display: none;
   }
-  .services div{
-    border-bottom: #333 dashed 1px;
+  .skills div{
+    border-bottom: red dashed 1px;
     padding: 1.2rem 1rem;
   }
 }
@@ -432,7 +432,7 @@ body::-webkit-scrollbar {
 }
 
 footer {
-  padding: 2.2rem;
+  padding: 1.5rem;
 }
 
 footer p {
@@ -463,10 +463,10 @@ footer p {
   top: 0;
   left: 0;
   z-index: 2;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   padding: 1rem;
-  background: 0,0,0,1;
+  background: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -539,7 +539,7 @@ footer p {
 }
 
 .menu-wrap .menu > div {
-  background: rgba(51,51,51,0.95);
+  background: rgba(51,51,51,1);
   border-radius: 50%;
   width: 200vw;
   height: 200vw;
@@ -574,9 +574,7 @@ footer p {
 }
 
 .accordion-container {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  grid-template-areas: 'left center right';
+  display: flex;
   width: 100%;
 }
 
@@ -740,4 +738,42 @@ footer p {
 
 .mediumblog a:after{
   background-color: #00ab6c;
+}
+
+.me{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.me:hover{
+  transform: rotate(15deg);
+}
+
+.fab:hover, .fas:hover{
+  animation: glow 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: purple;
+}
+
+@keyframes glow {
+  from{
+    filter: hue-rotate(0deg);
+  }
+  to{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.footer-logo{
+  filter: grayscale(100%);
+  padding: 5px;
+  width: auto;
+  height: 25px;
+}
+
+.footer-logo:hover{
+  filter: grayscale(0%)
 }

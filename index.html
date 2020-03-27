@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Adam Payne</title>
-  <meta name="description" content="">
+  <title>Adam Payne | Full Stack Developer</title>
+  <meta name="robots" content="index,follow" />
+  <meta name='keywords' content='Full' >
+  <meta name="description" content="Adam Payne, Fullstack Web Developer From Sydney Australia. Ruby on Rails & MERN.">
+  <meta name='author' content='Adam Payne'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
@@ -20,15 +23,18 @@
 </head>
 
 <body>
+
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
-
+  <!-- Hamburger Menu -->
   <div class="menu-wrap">
     <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
+    <div class="hamburger">
+      <div>
+      </div>
+    </div>
     <div class="menu">
       <div>
         <div>
@@ -42,6 +48,8 @@
       </div>
     </div>
   </div>
+
+  <!-- Showcase -->
   <header class="showcase">
     <div class="content">
       <img src="img/logo.png" class="logo" alt="Logo">
@@ -54,7 +62,22 @@
     </div>
   </header>
 
-  <section class="services bg-light">
+  <section class="about bg-dark">
+    <div class="container">
+      <div class="grid-2">
+        <div class="center">
+          <img src="img/me.jpg" alt="Self Photo" class="me">
+        </div>
+        <div>
+          <h3>About Me</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia illum debitis ad pariatur deleniti, inventore ea labore ut reiciendis culpa nemo voluptatibus ducimus consequatur itaque totam? At cumque temporibus deserunt!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Skills -->
+  <section class="skills bg-light">
     <div class="container grid-3 center">
       <div>
         <i class="fab fa-html5 fa-3x"></i>
@@ -66,16 +89,16 @@
       <div>
         <i class="fas fa-gem fa-3x test"></i>
         <h3>Ruby on Rails</h3>
-        <p>Finished my boot-camp</p>
+        <p>My Framework of Choice</p>
       </div>
       <div>
         <i class="fas fa-layer-group fa-3x"></i>
         <h3>MERN Stack</h3>
         <p>MonogoDB, Express, React, Node</p>
-
       </div>
     </div>
   </section>
+  <!-- Social Media Links -->
   <div class="accordion-container">
     <ul class="accordion">
       <li class="accordion-tab">
@@ -144,27 +167,13 @@
     </ul>
   </div>
 
-  <section class="about bg-dark">
-    <div class="container">
-      <div class="grid-2">
-        <div class="center">
-          <i class="fas fa-laptop fa-10x"></i>
-        </div>
-        <div>
-          <h3>About Me</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia illum debitis ad pariatur deleniti, inventore ea labore ut reiciendis culpa nemo voluptatibus ducimus consequatur itaque totam? At cumque temporibus deserunt!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer class="center bg-light">
     <p>PaynlessDev <i class="far fa-copyright"> <script type="text/javascript">
       document.write(new Date().getFullYear());
     </script> </p></i>
+    <img src="img/glider.png" alt="glider" class="footer-logo">
+    <img src="img/fsf.png" alt="Free Software Foundation" class="footer-logo">
   </footer>
-
-
 
   <!-- End of Content                           -->
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
