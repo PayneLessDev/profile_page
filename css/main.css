@@ -167,6 +167,21 @@ ul{
 }
 
 /********** Queriers  **********/
+@media(min-width: 700px){
+  .contact-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .content-wrapper > *{
+    padding: 2em;
+  }
+
+  .contact-info h3, .contact-body ul, .brand{
+    text-align: left;
+  }
+}
+
 @media (max-width: 560px){
   .showcase::after{
     height: 50vh;
