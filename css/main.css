@@ -81,17 +81,11 @@ ul{
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 3fr;
-  grid-template-rows: 3fr 3fr 3fr;
+  grid-template-columns: 3fr 0.8fr 0.5rem 0.8fr 3fr;
+  grid-template-rows: 2fr 2fr;
   grid-template-areas:
-  "project1 project1-info project2-info project2"
-  "project3 project3-info project4-info project4"
-  "project5 project5-info project6-info project6";
-}
-.projects-container > section{
-  width: 10px;
-  height: 10px;
-  background-color: red;
+  "project1 project1-info gap project2-info project2"
+  "project3 project3-info gap project4-info project4";
 }
 
 .project1{
