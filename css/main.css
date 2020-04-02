@@ -81,90 +81,61 @@ ul{
   width: 100%;
   height: 100vh;
   display: grid;
+  color: var(--light);
   grid-template-columns: 3fr 0.8fr 0.5rem 0.8fr 3fr;
   grid-template-rows: 2fr 2fr;
   grid-template-areas:
   "project1 project1-info gap project2-info project2"
   "project3 project3-info gap project4-info project4";
+  justify-content: center;
+  align-items: center;  
 }
 
 .project1{
   width: 100%;
   height: 100%;
-  background: green;
   grid-area: project1;
 }
 .project1-info{
   width: 100%;
   height: 100%;
-  background: lightgreen;
   grid-area: project1-info;
 }
 
 .project2{
   width: 100%;
   height: 100%;
-  background: blue;
   grid-area: project2;
 }
 
 .project2-info{
   width: 100%;
   height: 100%;
-  background: lightblue;
   grid-area: project2-info;
 }
 
 .project3{
   width: 100%;
   height: 100%;
-  background: red;
   grid-area: project3;
 }
 .project3-info{
   width: 100%;
   height: 100%;
-  background: pink;
   grid-area: project3-info;
 }
 
 .project4{
   width: 100%;
   height: 100%;
-  background: yellow;
   grid-area: project4;
 }
 .project4-info{
   width: 100%;
   height: 100%;
-  background: lightyellow;
   grid-area: project4-info;
 }
-.project5{
-  width: 100%;
-  height: 100%;
-  background: orange;
-  grid-area: project5;
-}
-.project5-info{
-  width: 100%;
-  height: 100%;
-  background: lightsalmon;
-  grid-area: project5-info;
-}
 
-.project6{
-  width: 100%;
-  height: 100%;
-  background: black;
-  grid-area: project6;
-}
-.project6-info{
-  width: 100%;
-  height: 100%;
-  background: grey;
-  grid-area: project6-info;
-}
 
 /********** Contact Form **********/
 .contact-body{
@@ -233,16 +204,16 @@ ul{
 .contact-contact form button, .contact-contact form input, .contact-contact form textarea{
   width: 100%;
   padding: .25em;
-  border: 1px solid red;
+  border: 1px solid purple;
 }
 
 .contact-contact form button{
-  background: green;
+  background: grey;
   border: 0;
   text-transform: uppercase;
 }
 .contact-contact form button:hover, .contact-contact form button:focus{
-  background: red;
+  background: darkslategray;
   color:var(--light);
   outline: 0;
   transition: background-color 2s ease-out;
@@ -540,7 +511,7 @@ ul{
 }
 
 .accordion{
-  background: var(--light);
+  background: rgba(0, 0, 0, 0);
   width: 100%;
   min-width: 880px;
   display: block;
@@ -721,4 +692,32 @@ ul{
 .footer-logo{
   padding: 2.5px;
   height: 25px;
+}
+
+.resume-container{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  color: var(--light);
+  grid-template-columns: 50px 1fr 1fr;
+  grid-template-rows: 50px 2fr;
+  grid-template-areas: 
+  "ham title title"
+  "gap education skills";
+}
+.resume-title{
+  height: 100%;
+  width: 100%;
+  grid-area: title;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.education{
+  grid-area: education;
+}
+
+.skills{
+  grid-area: skills;
 }
