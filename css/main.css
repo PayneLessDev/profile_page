@@ -27,7 +27,7 @@
   --text-highlight: ;
 
   /* Monochrome */
-  --dark0: #000000;
+  --dark0: grey;
   --dark1: #444;
   --light: #f4f4f4;
   }
