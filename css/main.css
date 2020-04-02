@@ -724,3 +724,71 @@ ul{
 table, th, td {
   padding: 5px;
 }
+
+.blog-container{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  color: var(--light);
+  grid-template-columns: 50px 1fr 1fr 1fr;
+  grid-template-rows: 50px 2fr 2fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "ham title title title"
+  "gap blog1 blog2 blog3"
+  "gap blog4 blog5 blog6";
+}
+.blog-title{
+  height: 100%;
+  width: 100%;
+  grid-area: title;
+  margin: 0;
+  padding: 0;
+}
+
+.blog1{
+  height: 100%;
+  width: 100%;
+  grid-area: blog1;
+  margin: 0;
+  padding: 0;
+}
+.blog2{
+  height: 100%;
+  width: 100%;
+  grid-area: blog2;
+  margin: 0;
+  padding: 0;
+}
+
+.blog3{
+  height: 100%;
+  width: 100%;
+  grid-area: blog3;
+  margin: 0;
+  padding: 0;
+}
+
+.blog4{
+  height: 100%;
+  width: 100%;
+  grid-area: blog4;
+  margin: 0;
+  padding: 0;
+}
+
+.blog5{
+  height: 100%;
+  width: 100%;
+  grid-area: blog5;
+  margin: 0;
+  padding: 0;
+}
+
+.blog6{
+  height: 100%;
+  width: 100%;
+  grid-area: blog6;
+  margin: 0;
+  padding: 0;
+}
