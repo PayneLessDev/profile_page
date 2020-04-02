@@ -721,3 +721,6 @@ ul{
 .skills{
   grid-area: skills;
 }
+table, th, td {
+  padding: 5px;
+}
